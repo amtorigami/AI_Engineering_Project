@@ -102,11 +102,27 @@ Le projet comprend plusieurs scripts dédiés à l'évaluation :
 - Évaluation de la pertinence des passages récupérés.
 - Évaluation des performances du système.
 
+## Tests de l'agent
+
+L'agent a été testé sur trois questions relatives au passeport marocain et deux questions hors sujet.
+
+| #   | Question                                                                     | Résultat obtenu                                                           | Évaluation |
+| --- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
+| 1   | Quels documents fournir pour renouveler un passeport marocain au Maroc ?     | Liste des documents nécessaires au renouvellement.                        | Correct    |
+| 2   | Quels documents sont nécessaires pour un passeport marocain pour un mineur ? | Documents adaptés à l'âge du mineur.                                      | Correct    |
+| 3   | Quelle est la procédure en cas de perte du passeport ?                       | Explication des démarches et des justificatifs nécessaires.               | Correct    |
+| 4   | Quels documents pour la carte grise d'une nouvelle voiture ?                 | Je ne sais pas, je suis spécialisé uniquement dans le passeport marocain. | Correct    |
+| 5   | Quels documents pour obtenir une CIN pour la première fois ?                 | Je ne sais pas, je suis spécialisé uniquement dans le passeport marocain. | Correct    |
+
+Les trois premières questions vérifient la capacité de récupération documentaire (RAG). Les deux dernières vérifient le respect du périmètre de spécialisation de l'agent.
+
 ## Démonstration
 
 L'interface Google ADK Web permet de tester l'agent et d'interagir avec lui.
 
-![Interface de démonstration](screenshots/adk_demo.png)
+![Interface de démonstration 1](screenshots/adk_demo1.png)
+
+![Interface de démonstration 2](screenshots/adk_demo2.png)
 
 ## Installation et exécution
 
