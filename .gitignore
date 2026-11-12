@@ -1,0 +1,7 @@
+.env
+rag_venv/
+__pycache__/
+*.py[cod]
+.adk/
+chunks.json
+embeddings.json
